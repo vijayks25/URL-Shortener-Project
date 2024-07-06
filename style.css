@@ -1,0 +1,104 @@
+/* Reset default styles and set base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center; /* Center align text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center align navigation items */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; /* Increased spacing */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Dark background on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+    background-color: #fff; /* White background */
+    margin: auto;
+    max-width: 800px; /* Center content and limit width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Form styles */
+form {
+    margin-bottom: 2rem;
+}
+
+input[type="url"],
+input[type="text"],
+input[type="password"],
+textarea {
+    width: calc(100% - 20px); /* Take full width minus padding */
+    padding: 1rem; /* Increased padding */
+    margin-bottom: 1.5rem; /* More spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #333; /* Darker border on focus */
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 1rem 1.5rem; /* Increased padding for button */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+button:hover {
+    background: #555; /* Darker background on hover */
+}
+
+/* Flash messages styles */
+.flashes {
+    padding: 0;
+}
+
+.flashes li {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    margin-bottom: 15px; /* Increased spacing */
+    padding: 15px; /* Increased padding */
+    border-radius: 4px;
+}
